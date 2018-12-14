@@ -18,7 +18,6 @@ export default class App extends Component<Props> {
       <View style={styles.container}>
         <Text style={styles.welcome} >{partner}'s App!</Text>
         <Text style={styles.welcome} >Their secret is {secret}</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
       </View>
     );
   }
