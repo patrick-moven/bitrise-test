@@ -97,10 +97,6 @@ def enableProguardInReleaseBuilds = false
 android {
     signingConfigs {
         config {
-            keyAlias 'key0'
-            keyPassword 'moven1234'
-            storeFile file('/Users/patrickcondon/workspace/bitrise-env-config/MultiplePartnerConfig/android/keystores/Untitled')
-            storePassword 'moven1234'
         }
     }
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -127,7 +123,6 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-            signingConfig signingConfigs.config
         }
     }
     // applicationVariants are e.g. debug, release
