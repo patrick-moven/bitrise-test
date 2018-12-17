@@ -97,9 +97,9 @@ def enableProguardInReleaseBuilds = false
 android {
     signingConfigs {
         config {
-            keyAlias 'config0'
+            keyAlias 'key0'
             keyPassword 'moven1234'
-            storeFile file('/Users/patrickcondon/android-test')
+            storeFile file('/Users/patrickcondon/workspace/bitrise-env-config/MultiplePartnerConfig/android/keystores/Untitled')
             storePassword 'moven1234'
         }
     }
