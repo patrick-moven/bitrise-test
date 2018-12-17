@@ -1,7 +1,3 @@
 #!/usr/bin/env bash
 
-touch .env
-partner='PARTNER='
-echo "$partner$PARTNER" >> .env
-color='COLOR='
-echo "$color$COLOR" >> .env
+curl -o .env https://s3.amazonaws.com/the-dive-log/uploads/bitrise-test/"$PARTNER"/config.txt
